@@ -8,7 +8,7 @@ const SineWaveText = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPosition(prevPosition => (prevPosition + .5) % screenWidth);
+      setPosition(prevPosition => (prevPosition + 1) % screenWidth);
     }, 20);
     return () => clearInterval(interval);
   }, [screenWidth]);
