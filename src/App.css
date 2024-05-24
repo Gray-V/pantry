@@ -1,45 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Poetsen+One&family=Reddit+Sans:ital,wght@0,800;1,800&display=swap');
 
-.content {
-    color: rgb(0, 0, 0);
-    font-family: "Acme", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    background-color: #dbdbb4;
-    margin-top: -10vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Reddit Sans', sans-serif;
+  background-color: #f1f1f1;
+  background-color: #dbdbb4;
 }
 
-.content h1{
-    font-size: 100px;
-    color: rgb(0, 0, 0);
-    font-family: "Acme", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    display: inline-block;
-    white-space: nowrap;
+.App h1{  
+  font-family: 'Poetsen One', cursive;
+  font-size: 100px;
+  margin-bottom: 0.5em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.logo {
+  color: #000;
+  font-family: "Acme", sans-serif;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbdbb4;
+  margin-top: -10vh;
+}
+
+.logo h1 {
+  font-size: 100px;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .social-media-buttons {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   background-color: #dbdbb4;
+  padding: 10px;
 }
 
 .social-media-buttons a img {
   width: 50px;
   height: 50px;
-  margin: 10px;
+  margin: 0 10px;
   transition: transform 0.3s ease;
 }
 
 .social-media-buttons a img:hover {
   transform: scale(1.1);
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 100;
+  color: #6d6969;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.info {
+  width: 40%;
+  margin-top: 10vh;
+  padding-left: 10%;
+}
+
+.access-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 10vh;
+  padding-right: 10%;
+}
+
+.access-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #dbdbb4;
+}
+
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.form-group-full {
+  width: 100%;
+}
+
+.access-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #dbdbb4;
+  color: #000;
+  font-family: "Acme", sans-serif;
+  font-weight: 800;
 }
