@@ -4,7 +4,7 @@ import './SineWaveText.css';
 const SineWaveText = () => {
   const [position, setPosition] = useState(0);
   const screenWidth = window.innerWidth;
-  const text = "  G  e t   I n  s p  i r e  d   w  it h   P  a n  t r y      ".repeat(1);
+  const text = "  G  e t   I n  s p  i r e  d   w  it h   P  a n  t r y   ".repeat(1);
 
   useEffect(() => {
     const interval = setInterval(() => {

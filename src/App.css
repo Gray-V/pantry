@@ -25,3 +25,21 @@
     display: inline-block;
     white-space: nowrap;
 }
+
+.social-media-buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #dbdbb4;
+}
+
+.social-media-buttons a img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media-buttons a img:hover {
+  transform: scale(1.1);
+}
