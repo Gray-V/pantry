@@ -7,7 +7,11 @@ const EarlyAccess = () => {
       <div className="info">
         <p>Join Pantry And Discover Endless Culinary Possibilities!</p>
         <p>Here's To Rediscovering The Joy Of Cooking And Sharing — Because Food Tastes Better When Shared With Others.</p>
+        <div className="app-icon">
+          <img src={require('./images/raccoon.png')} alt="Pantry App Icon" />
+        </div>
       </div>
+      
       <form className="access-form">
         <div className="form-group-inline">
           <div className="form-group">

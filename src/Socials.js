@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'; // Assuming you want to add some CSS styling
+import './App.css'; 
 
 const Socials = () => {
   return (
