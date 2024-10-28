@@ -1,209 +1,473 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poetsen+One&family=Reddit+Sans:ital,wght@0,800;1,800&display=swap');
+/* src/App.css */
 
-body {
+/* Import Lazy Dog Font */
+@font-face {
+  font-family: 'Lazy Dog';
+  src: url('./fonts/lazy_dog.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Reddit Sans', sans-serif;
-  background-color: #dbdbb4;
+  box-sizing: border-box;
 }
 
-.App h1 {
-  font-family: 'Poetsen One', cursive;
-  font-size: 100px;
-  margin-bottom: 0.5em;
-  font-weight: 200;
-  text-align: center;
-}
-
-.logo {
-  color: #000;
-  font-family: "Acme", sans-serif;
-  font-weight: 800;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #dbdbb4;
-  margin-top: -10vh;
-}
-
-.logo h1 {
-  font-size: 100px;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.social-media-buttons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #dbdbb4;
-  padding: 10px;
-}
-
-.social-media-buttons a img {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-}
-
-.social-media-buttons a img:hover {
-  transform: scale(1.1);
-}
-
-h1 {
-  margin-bottom: 0.5em;
-}
-
-p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  font-weight: 100;
-  color: #6d6969;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  margin: 20px;
-}
-
-.info {
-  width: 40%;
-  margin-top: 10vh;
-  padding-left: 10%;
-}
-
-.access-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40%;
-  margin-top: 10vh;
-  padding-right: 10%;
-}
-
-.access-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #dbdbb4;
-}
-
-.form-group-inline {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-  
-}
-
-.form-group-full {
-  width: 100%;
-}
-
-.access-form button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #000;
-  background-color: #dbdbb4;
-  color: #000;
-  font-family: "Acme", sans-serif;
-  font-weight: 800;
-}
-
-.loop {
-  background-color: #f9fcf1;
-  padding: 20px;
-  left: 0;
-}
-
-.loop h1 {
-  font-family: 'Poetsen One', cursive;
-  font-size: 100px;
-  margin-bottom: 0.5em;
-  font-weight: 200;
-  text-align: left;
-}
-
-.app-icon img {
-  width: 100px; /* Smaller width */
-  height: 100px; /* Smaller height */
-  display: block;
-}
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Reddit Sans', sans-serif;
-  background-color: #dbdbb4;
-}
-
-.loop {
-  background-color: #f9fcf1;
-  padding: 40px;
-  text-align: center;
-  margin: 20px auto;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.loop h1 {
-  font-family: 'Poetsen One', cursive;
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  text-align: center;
-  font-weight: 200;
+  font-family: 'Lazy Dog', Arial, sans-serif;
+  background-color: #F2FCFF;
   color: #333;
 }
 
-.loop p {
-  font-size: 1.2em;
-  color: #6d6969;
-  margin-bottom: 20px;
+/* Header Styling */
+.header {
+  margin-top: 30px;
+  position: relative;
   text-align: center;
-}
-
-.email-form {
+  background-color: #F2FCFF;
+  height: 800px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #1533C7;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: -30px;
+}
+
+/* Styling for the phone image */
+.phone-image {
+  width: 400px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* About Section Styling */
+.about {
+  padding: 40px;
   text-align: center;
 }
 
-.form-group {
-  margin-right: 10px;
+.about h2 {
+  font-size: 4rem;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.form-group input {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #dbdbb4;
-  font-size: 1em;
-  width: 250px;
+.about p {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.submit-button {
+.about button {
   padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1533C7;
   border: none;
-  background-color: #7c8c65;
-  color: white;
-  font-size: 1em;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-  background-color: #5e7050;
+.about button:hover {
+  background-color: #0f2ca2;
+}
+
+/* Features Section Styling */
+.features {
+  padding: 40px;
+  background-color: #f7fbff;
+}
+
+.feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.feature-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-text {
+  width: 40%;
+  text-align: left;
+  padding: 20px;
+}
+
+.feature-text h3 {
+  font-size: 4rem;
+  color: #1533C7;
+  margin-bottom: 10px;
+}
+
+.feature-text p {
+  font-size: 2rem;
+  color: #555;
+}
+
+.feature-images {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Circle Background Elements */
+.feature-section::before,
+.feature-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.feature-section:nth-child(odd)::before {
+  background-color: #d98880;
+  width: 80px;
+  height: 80px;
+  top: -30px;
+  left: 10%;
+}
+
+.feature-section:nth-child(odd)::after {
+  background-color: #85c1e9;
+  width: 100px;
+  height: 100px;
+  bottom: -40px;
+  right: 15%;
+}
+
+.feature-section:nth-child(even)::before {
+  background-color: #82e0aa;
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  right: 20%;
+}
+
+.feature-section:nth-child(even)::after {
+  background-color: #b3cce6;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: 20%;
+}
+
+/* Footer Section Styling */
+.footer {
+  padding: 40px;
+  background-color: #1533C7;
+  color: #fff;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  /* Large tablets and small desktops */
+  .logo {
+    font-size: 4.5rem;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+  }
+  .phone-image {
+    width: 300px;
+  }
+  .about h2 {
+    font-size: 3rem;
+  }
+  .about p {
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .feature-text h3 {
+    font-size: 3rem;
+  }
+  .feature-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Tablets and smaller screens */
+  .header {
+    height: 600px;
+  }
+  .logo {
+    font-size: 3.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .phone-image {
+    width: 250px;
+  }
+  .about h2 {
+    font-size: 2.5rem;
+  }
+  .about p {
+    font-size: 1.25rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .feature-text h3 {
+    font-size: 2.5rem;
+  }
+  .feature-text p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile screens */
+  .header {
+    height: 500px;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .phone-image {
+    width: 180px;
+  }
+  .about h2 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .feature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-section.reverse {
+    flex-direction: column;
+  }
+  .feature-text {
+    width: 90%;
+    text-align: center;
+  }
+  .feature-images {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .feature-text h3 {
+    font-size: 2rem;
+  }
+  .feature-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small screens */
+  .logo {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .phone-image {
+    width: 150px;
+  }
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  .about p {
+    font-size: 0.9rem;
+  }
+  .feature-text h3 {
+    font-size: 1.5rem;
+  }
+  .feature-text p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Footer Section Styling */
+.footer {
+  padding: 40px;
+  background-color: #1533C7;
+  color: #fff;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Signup in Footer */
+.newsletter {
+  padding: 20px 0;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  color: #e0f2ff;
+  margin-bottom: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #1533C7;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Tailor-Made Features Section Styling */
+.tailored-features {
+  padding: 60px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.tailored-features h2 {
+  font-size: 2rem;
+  color: #1533C7;
+  margin-bottom: 30px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px;
+}
+
+.feature-list div {
+  width: 30%;
+  min-width: 200px; /* Ensures boxes don’t get too small on smaller screens */
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-list div h3 {
+  font-size: 1.5rem;
+  color: #1533C7;
+  margin-bottom: 15px;
+}
+
+.feature-list div p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design for Footer and Tailor-Made Features */
+@media (max-width: 992px) {
+  .footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.2rem;
+  }
+
+  .tailored-features h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-list div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .newsletter h2 {
+    font-size: 1rem;
+  }
+
+  .tailored-features h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-list div {
+    width: 100%;
+    max-width: 300px;
+  }
 }
