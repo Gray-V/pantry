@@ -26,12 +26,16 @@ body {
   position: relative;
   text-align: center;
   background-color: #F2FCFF;
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.arrow{
+  width: 90%;
 }
 
 .logo {
