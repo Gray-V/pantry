@@ -9,7 +9,6 @@ const About = () => {
       Pantry is an all-in-one food social media platform. A virtual pantry full of all your favorite recipes and foods.
        Seamless grocery shopping and step by step videos.
       </p>
-      <button>Sign Up</button>
     </section>
   );
 };
