@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "5MFNV8X24Q.PantryApp.Pantry",
+        "paths": [ "*" ]
+      }
+    ]
+  }
+}
